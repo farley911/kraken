@@ -13,7 +13,7 @@ This is a template to facilitate rapid application development based on the Angu
 
 ## Quick Start
 
-Follow these steps to get the application up and running. Once the application is running you can begin using the [provided modules](#provided-modules) or start creating your own!
+Follow these steps to get the application up and running. Once the application is running you can begin building your project using the [provided modules](#provided-modules) or start creating your own modules!
 
 1. Clone the repo
 1. Open a terminal window
@@ -24,6 +24,11 @@ Follow these steps to get the application up and running. Once the application i
 1. Navigate to `localhost`
 
 ## Provided Modules
+
+- Core Module
+  - Page Not Found Component
+    Page to display if a user attempts to navigate to an invalid route
+- Shared Module
 
 ## Linting
 
