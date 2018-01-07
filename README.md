@@ -1,9 +1,10 @@
-## LaFerrari
-### Angular 5+ Admin Template
+# LaFerrari
+
+## Angular 5+ Admin Template
 
 This is a template to facilitate rapid application development based on the Angular CLI and John Papas styleguide. Using this template you will be able to rapidly deploy an application with the most common angular modules already configured as well as extensive linting rules to cover HTML, CSS, and TS to ensure a high level of code quality and consistency.
 
-### Linting
+## Linting
 
 I am a big proponent of linting your application to ensure both quality and consistancy. To this end I have included extensive rules for linting HTML, CSS and TS. You may find these rules to be too restrictive for your preference; If that is the case I highly recommend you disable the offending rule(s) rather than disable linting entirely.
 
