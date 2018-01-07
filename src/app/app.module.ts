@@ -6,7 +6,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { MaterialsModule } from './materials.module';
 
-
 @NgModule({
   declarations: [
     AppComponent

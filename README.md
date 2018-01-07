@@ -18,7 +18,10 @@ However even with real time notifications you will still miss mistakes from time
 
 Recommended `.git/hooks/pre-commit` contents
 ```bash
-npm run lint
+#!/bin/sh
+set -e
+
+npm run lintn
 ```
 
 ## Change Log
