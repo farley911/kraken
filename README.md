@@ -14,14 +14,12 @@ Recommened Extensions for Microsoft Visual Studio Code
 - [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
 - [StyleLint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)
   - To enable stylelint in VSCode do the following:
-    - Click `File`
-    - Click `Preferences`
-    - Click `Settings`
-    - Add the following
+    - Click `File` > `Preferences` > `Settings`
+    - Add the following key value pairs inside the brackets `{ ... }`:
       ```json
       "stylelint.enable": true,
       "css.validate": false,
-      "scss.validate": false,
+      "scss.validate": false
       ```
 - [MarkdownLint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
