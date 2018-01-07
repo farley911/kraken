@@ -9,6 +9,7 @@ This is a template to facilitate rapid application development based on the Angu
 - [Quick Start](#quick-start)
 - [Provided Modules](#provided-modules)
 - [Linting](#linting)
+- [Documentation](#documentation)
 - [Change Log](#change-log)
 
 ## Quick Start
