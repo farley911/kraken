@@ -6,10 +6,10 @@ This is a template to facilitate rapid application development based on the Angu
 
 ## Table of Contents
 
-[Quick Start](#quick-start)
-[Provided Modules](#provided-modules)
-[Linting](#linting)
-[Change Log](#change-log)
+- [Quick Start](#quick-start)
+- [Provided Modules](#provided-modules)
+- [Linting](#linting)
+- [Change Log](#change-log)
 
 ## Quick Start
 
