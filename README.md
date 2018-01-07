@@ -5,7 +5,7 @@ This is a template to facilitate rapid application development based on the Angu
 
 ### Linting
 
-I am a big proponent of linting your application to ensure both quality and consistancy. To this end I have included extensive rules for linting HTML, CSS and TS. You may find these rules to be too restrictive for your preference; If that is the case I highly recommend you disable the offending rule(s) rather than disable linting entirely.
+I am a big proponent of linting your application to ensure both quality and consistancy. To this end I have included extensive rules for linting HTML, CSS and TS. You may find these rules to be too restrictive for your preferences; If that is the case I highly recommend you disable the offending rule(s) rather than disable linting entirely.
 
 To fully take advantage of these rules you will want to install linting extensions into your IDE. This will allow you to recieve real time notifications in the IDE when you violate a rule rather than requiring you to manually run the linters.
 
