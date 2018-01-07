@@ -70,13 +70,4 @@ The full documentation for the LaFerrari Admin template is located in the repo's
 
 ## Change Log
 
-### V 0.1.0
-
-- Initalizes Angular using Sass
-- Configures directories based on John Papas Styleguide
-- Adds Angular Material
-- Adds Angular Animations
-- Adds Reactive Forms Module
-- Configures TSLint rules
-- Configures Stylelint rules
-- Configures Angular route and routes
+The full change log is located in the repo's [wiki](https://github.com/farley911/laferrari/wiki/Change-Log)
