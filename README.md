@@ -1,7 +1,7 @@
 ## LaFerrari
 ### Angular 5+ Admin Template
 
-This is a template to facilitate rapid application development based on the Angular CLI and John Papas styleguide. Using this template you will be able to rapidly deploy an application with the most common angular modules already configured as well as extensive linting rules to cover HTML, CSS, and TS to ensure a high level of code quality.
+This is a template to facilitate rapid application development based on the Angular CLI and John Papas styleguide. Using this template you will be able to rapidly deploy an application with the most common angular modules already configured as well as extensive linting rules to cover HTML, CSS, and TS to ensure a high level of code quality and consistency.
 
 ## Change Log
 
