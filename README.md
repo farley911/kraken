@@ -1,4 +1,4 @@
-## laferrari
+## LaFerrari
 ### Angular 5+ Admin Template
 
 ## Change Log
@@ -8,6 +8,7 @@
 Initalizes Angular using Sass
 Adds Material
 Adds Reactive Forms Module
+Adds Pre-commit hooks
 Configures TSLint rules
 Configures Stylelint rules
 Configures Markdownlint rules
