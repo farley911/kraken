@@ -25,12 +25,13 @@ Follow these steps to get the application up and running. Once the application i
 
 ## Provided Modules
 
-- Angular Animation Module
-- Angular Material Module
-- Angular Reactive Forms Module
-- Angular Router Module
+- [Angular Animation Module](https://angular.io/guide/animations)
+- [Angular Material Module](https://material.angular.io/)
+- [Angular Reactive Forms Module](https://angular.io/guide/reactive-forms)
+- [Angular Router Module](https://angular.io/guide/router)
 - Core Module
   - Page Not Found Component
+
     Page to display if a user attempts to navigate to an invalid route
 - Shared Module
   - Coming Soon
