@@ -7,10 +7,10 @@ This is a template to facilitate rapid application development based on the Angu
 
 ###  V 0.1.0
 
-Initalizes Angular using Sass
-Adds Material
-Adds Reactive Forms Module
-Adds Pre-commit hooks (WIP)
-Configures TSLint rules (WIP)
-Configures Stylelint rules (WIP)
-Configures Markdownlint rules (WIP)
+* Initalizes Angular using Sass
+* Adds Material
+* Adds Reactive Forms Module
+* Adds Pre-commit hooks (WIP)
+* Configures TSLint rules (WIP)
+* Configures Stylelint rules (WIP)
+* Configures Markdownlint rules (WIP)
