@@ -43,6 +43,6 @@ npm run lint
 - Adds Angular Material
 - Adds Angular Animations
 - Adds Reactive Forms Module
-- Configures TSLint rules (WIP)
-- Configures Stylelint rules (WIP)
-- Configures Markdownlint rules (WIP)
+- Configures TSLint rules
+- Configures Stylelint rules
+- Configures Angular route and routes
