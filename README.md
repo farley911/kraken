@@ -33,6 +33,7 @@ Follow these steps to get the application up and running. Once the application i
   - Page Not Found Component
     Page to display if a user attempts to navigate to an invalid route
 - Shared Module
+  - Coming Soon
 
 ## Linting
 
