@@ -7,7 +7,7 @@
     "start": "ng serve",
     "build": "ng build --prod",
     "test": "ng test",
-    "lint": "ng lint npm run stylelint",
+    "lint": "ng lint --fix && npm run stylelint",
     "e2e": "ng e2e",
     "stylelint": "gulp lint-sass"
   },
