@@ -21,7 +21,7 @@ Recommended `.git/hooks/pre-commit` contents
 #!/bin/sh
 set -e
 
-npm run lint --fix
+npm run lint
 ```
 
 ## Change Log
