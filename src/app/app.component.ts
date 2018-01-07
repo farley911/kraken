@@ -7,10 +7,10 @@ import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  private testForm: FormGroup;
   private something: FormControl = new FormControl('', Validators.required);
+  private testForm: FormGroup;
 
-  constructor(
+  constructor (
     private formBuilder: FormBuilder
   ) {
     this.testForm = formBuilder.group({
@@ -18,7 +18,7 @@ export class AppComponent {
     });
   }
 
-  private onSubmit(data: any) {
+  private onSubmit (data: any) {
     console.log(data.value.something);
   }
 }
