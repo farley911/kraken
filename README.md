@@ -25,6 +25,10 @@ Follow these steps to get the application up and running. Once the application i
 
 ## Provided Modules
 
+- Angular Animation Module
+- Angular Material Module
+- Angular Reactive Forms Module
+- Angular Router Module
 - Core Module
   - Page Not Found Component
     Page to display if a user attempts to navigate to an invalid route
