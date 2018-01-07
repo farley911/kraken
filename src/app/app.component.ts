@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
+import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
+import { Title } from '@angular/platform-browser';
+import 'rxjs/add/operator/filter';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/mergeMap';
 
 @Component({
   selector: 'app-root',
@@ -7,18 +11,28 @@ import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  private something: FormControl = new FormControl('', Validators.required);
-  private testForm: FormGroup;
-
   constructor (
-    private formBuilder: FormBuilder
+    private activatedRoute: ActivatedRoute,
+    private router: Router,
+    private titleService: Title
   ) {
-    this.testForm = formBuilder.group({
-      something: this.something
-    });
+    this.subscribeToRouterEvents();
   }
 
-  private onSubmit (data: any) {
-    console.log(data.value.something);
+  private subscribeToRouterEvents(): void {
+    this.router.events
+    .filter(event => event instanceof NavigationEnd)
+    .map(() => this.activatedRoute)
+    .map(route => {
+      while (route.firstChild) {
+        route = route.firstChild;
+      }
+      return route;
+    })
+    .filter(route => route.outlet === 'primary')
+    .mergeMap(route => route.data)
+    .subscribe(res => {
+      this.titleService.setTitle(res.title);
+    });
   }
 }
