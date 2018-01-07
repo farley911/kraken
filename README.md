@@ -30,9 +30,7 @@ Follow these steps to get the application up and running. Once the application i
 - [Angular Reactive Forms Module](https://angular.io/guide/reactive-forms)
 - [Angular Router Module](https://angular.io/guide/router)
 - Core Module
-  - Page Not Found Component
-
-    Page to display if a user attempts to navigate to an invalid route
+  - [Page Not Found Component](https://github.com/farley911/laferrari/wiki/Page-Not-Found-Component)
 - Shared Module
   - Coming Soon
 
@@ -65,6 +63,10 @@ set -e
 
 npm run lint
 ```
+
+## Documentation
+
+The full documentation for the LaFerrari Admin template is located in the repo's [wiki](https://github.com/farley911/laferrari/wiki)
 
 ## Change Log
 
