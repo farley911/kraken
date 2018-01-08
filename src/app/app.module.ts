@@ -8,7 +8,7 @@ import { AppRoutes } from './app.routes';
 import { CoreModule } from './modules/core/core.module';
 import { MaterialsModule } from './materials.module';
 import { RouteModule } from './route.module';
-import { SharedModule } from './modules/shared/shared.module';
+import { ShowcaseModule } from './modules/showcase/showcase.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { SharedModule } from './modules/shared/shared.module';
     MaterialsModule,
     ReactiveFormsModule,
     RouteModule,
-    SharedModule
+    ShowcaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
