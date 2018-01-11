@@ -1,19 +1,14 @@
 import { CommonModule } from '@angular/common';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
 import { NgModule } from '@angular/core';
 
+import { MaterialsModule } from '../../materials.module';
 import { OutlineButtonDirective } from '../../directives/outline-button/outline-button.directive';
 
 @NgModule({
-  exports: [
-    MatButtonModule,
-    MatIconModule
-  ],
+  exports: [ ],
   imports: [
     CommonModule,
-    MatButtonModule,
-    MatIconModule
+    MaterialsModule
   ],
   declarations: [
     OutlineButtonDirective
