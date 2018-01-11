@@ -1,6 +1,4 @@
-# LaFerrari
-
-## Angular 5+ Admin Template
+# Kraken - Angular 5 Admin Template
 
 This is a template to facilitate rapid application development based on the Angular CLI and John Papas styleguide. Using this template you will be able to rapidly deploy an application with the most common angular modules already configured as well as extensive linting rules to cover TypeScript and SASS/CSS to ensure a high level of code quality and consistency.
 
@@ -31,7 +29,7 @@ Follow these steps to get the application up and running. Once the application i
 - [Angular Reactive Forms Module](https://angular.io/guide/reactive-forms)
 - [Angular Router Module](https://angular.io/guide/router)
 - Core Module
-  - [Page Not Found Component](https://github.com/farley911/laferrari/wiki/Page-Not-Found-Component)
+  - [Page Not Found Component](https://github.com/farley911/kraken/wiki/Page-Not-Found-Component)
 - Shared Module
   - Coming Soon
 
@@ -67,8 +65,8 @@ npm run lint
 
 ## Documentation
 
-The full documentation for the LaFerrari Admin template is located in the repo's [wiki](https://github.com/farley911/laferrari/wiki)
+The full documentation for the kraken Admin template is located in the repo's [wiki](https://github.com/farley911/kraken/wiki)
 
 ## Change Log
 
-The full change log is located in the repo's [wiki](https://github.com/farley911/laferrari/wiki/Change-Log)
+The full change log is located in the repo's [wiki](https://github.com/farley911/kraken/wiki/Change-Log)

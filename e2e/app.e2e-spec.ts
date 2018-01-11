@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('laferrari App', () => {
+describe('kraken App', () => {
   let page: AppPage;
 
   beforeEach(() => {

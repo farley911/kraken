@@ -3,6 +3,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { NgModule } from '@angular/core';
 
+import { OutlineButtonDirective } from '../../directives/outline-button/outline-button.directive';
+
 @NgModule({
   exports: [
     MatButtonModule,
@@ -13,6 +15,8 @@ import { NgModule } from '@angular/core';
     MatButtonModule,
     MatIconModule
   ],
-  declarations: []
+  declarations: [
+    OutlineButtonDirective
+  ]
 })
 export class SharedModule { }
