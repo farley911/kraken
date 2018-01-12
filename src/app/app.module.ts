@@ -18,7 +18,6 @@ import { ShowcaseModule } from './modules/showcase/showcase.module';
     BrowserModule,
     BrowserAnimationsModule,
     CoreModule,
-    MaterialsModule,
     ReactiveFormsModule,
     RouteModule,
     ShowcaseModule

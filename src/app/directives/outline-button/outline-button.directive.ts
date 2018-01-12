@@ -1,20 +1,20 @@
-import { Directive, Renderer, OnInit, Input } from '@angular/core';
-import { ElementRef } from '@angular/core/src/linker/element_ref';
+import { Directive, Renderer, Input, ElementRef } from '@angular/core';
+
+import { AppColors } from '../../enums/app-colors.enum';
 
 @Directive({
   selector: '[appOutlineButton]'
 })
-export class OutlineButtonDirective implements OnInit {
+export class OutlineButtonDirective {
   @Input() color: string;
 
   constructor(
     private element: ElementRef,
     private renderer: Renderer
-  ) { }
-
-  ngOnInit() {
-    if (this.color) {
-      this.renderer.setElementStyle(this.element, 'borderColor', this.color);
+  ) {
+    if (this.color in AppColors) {
+      renderer.setElementClass(element.nativeElement, `kr-outline-btn-${this.color}`, true);
     }
+    renderer.setElementClass(element.nativeElement, 'kr-outline-btn', true);
   }
 }

@@ -5,7 +5,10 @@ import { MaterialsModule } from '../../materials.module';
 import { OutlineButtonDirective } from '../../directives/outline-button/outline-button.directive';
 
 @NgModule({
-  exports: [ ],
+  exports: [
+    MaterialsModule,
+    OutlineButtonDirective
+  ],
   imports: [
     CommonModule,
     MaterialsModule
