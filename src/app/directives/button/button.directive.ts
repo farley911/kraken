@@ -35,4 +35,8 @@ export class ButtonDirective {
     this.renderer.setElementClass(this.element.nativeElement, 'kr-btn-mouse-focused', true);
     this.ripple.launch(event.x, event.y);
   }
+
+  @HostListener('mouseup') onmouseup() {
+    this.renderer.setElementClass(this.element.nativeElement, 'kr-btn-mouse-focused', false);
+  }
 }
