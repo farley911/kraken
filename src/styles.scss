@@ -3,7 +3,7 @@
 
 @include mat-core();
 
-@import 'themes/deeporange-teal.color-theme.scss';
+@import 'themes/deeporange-teal.theme.scss';
 
 .kr-theme {
   @include angular-material-theme($deeporange-teal-theme);
