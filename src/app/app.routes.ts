@@ -7,7 +7,7 @@ import { PageNotFoundComponent } from './modules/core/page-not-found/page-not-fo
 import { RoutePaths } from './enums/route-paths.enum';
 
 export const AppRoutes: Routes = [{
-  path: RoutePaths.Buttons,
+  path: RoutePaths.buttons,
   component: ButtonsComponent,
   data: {
     title: 'Buttons'

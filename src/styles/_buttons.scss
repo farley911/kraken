@@ -28,7 +28,7 @@ button:disabled {
   text-decoration: none;
   transition: background .4s cubic-bezier(.25,.8,.25,1), box-shadow 280ms cubic-bezier(.4,0,.2,1);
   user-select: none;
-  vertical-align: bottom;
+  vertical-align: baseline;
   white-space: nowrap;
 
   &:disabled {
@@ -51,12 +51,47 @@ button:disabled {
   }
 }
 
+a.kr-btn {
+  vertical-align: bottom;
+}
+
+.kr-large-btn {
+  font-size: 24px !important; // Overrides Angular Material
+  line-height: 45px !important; // Overrides Angular Material
+  min-width: 125px !important; // Overrides Angular Material
+}
+
+.kr-small-btn {
+  font-size: 12px !important; // Overrides Angular Material
+  line-height: 28px !important; // Overrides Angular Material
+  min-width: 75px !important; // Overrides Angular Material
+}
+
+.kr-extra-small-btn {
+  font-size: 10px !important; // Overrides Angular Material
+  line-height: 22px !important; // Overrides Angular Material
+  min-width: 50px !important; // Overrides Angular Material
+}
+
 .kr-outline-btn {
   border: 2px solid black;
+  line-height: 32px;
   padding: 0px 16px;
 
   &:disabled {
     border-color: rgba(0,0,0,.42);
+  }
+
+  &.kr-large-btn {
+    line-height: 41px !important; // Overrides .kr-large-button
+  }
+
+  &.kr-small-btn {
+    line-height: 24px !important; // Overrides .kr-large-button
+  }
+
+  &.kr-extra-small-btn {
+    line-height: 18px !important; // Overrides .kr-large-button
   }
 
   &:active {

@@ -3,9 +3,10 @@ import { Router } from '@angular/router';
 import { MatRipple } from '@angular/material/core';
 
 import { ButtonDirective } from '../button/button.directive';
+import { ButtonSizes } from '../../enums/button-sizes.enum';
 
 @Directive({
-  selector: '[kr-rounded-button]',
+  selector: '[krRoundedButton]',
   providers: [ MatRipple ]
 })
 export class RoundedButtonDirective extends ButtonDirective implements AfterViewInit {

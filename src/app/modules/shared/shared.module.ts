@@ -6,9 +6,11 @@ import { OutlineButtonDirective } from '../../directives/outline-button/outline-
 import { RouteModule } from '../../route.module';
 import { RoundedButtonDirective } from '../../directives/rounded-button/rounded-button.directive';
 import { RoundedOutlineButtonDirective } from '../../directives/rounded-outline-button/rounded-outline-button.directive';
+import { ButtonSizeDirective } from '../../directives/button-size/button-size.directive';
 
 @NgModule({
   exports: [
+    ButtonSizeDirective,
     MaterialsModule,
     OutlineButtonDirective,
     RoundedButtonDirective,
@@ -21,6 +23,7 @@ import { RoundedOutlineButtonDirective } from '../../directives/rounded-outline-
     RouteModule,
   ],
   declarations: [
+    ButtonSizeDirective,
     OutlineButtonDirective,
     RoundedButtonDirective,
     RoundedOutlineButtonDirective

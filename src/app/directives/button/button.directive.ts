@@ -3,9 +3,10 @@ import { MatRipple } from '@angular/material/core';
 import { Router } from '@angular/router';
 
 import { AppColors } from '../../enums/app-colors.enum';
+import { ButtonSizes } from '../../enums/button-sizes.enum';
 
 @Directive({
-  selector: '[kr-button]'
+  selector: '[krButton]'
 })
 export class ButtonDirective {
   @Input() color: string;
@@ -19,9 +20,7 @@ export class ButtonDirective {
   ) { }
 
   public addClasses(): void {
-    if (this.color in AppColors) {
-      this.renderer.setElementClass(this.element.nativeElement, `kr-${this.color}`, true);
-    }
+    this.addColorClass();
     this.renderer.setElementClass(this.element.nativeElement, 'kr-btn', true);
   }
 
@@ -32,11 +31,21 @@ export class ButtonDirective {
   }
 
   @HostListener('mousedown', [ '$event' ]) onmousedown(event) {
-    this.renderer.setElementClass(this.element.nativeElement, 'kr-btn-mouse-focused', true);
+    this.toggleClass('kr-btn-mouse-focused', true);
     this.ripple.launch(event.x, event.y);
   }
 
   @HostListener('mouseup') onmouseup() {
-    this.renderer.setElementClass(this.element.nativeElement, 'kr-btn-mouse-focused', false);
+    this.toggleClass('kr-btn-mouse-focused', false);
+  }
+
+  private addColorClass(): void {
+    if (this.color in AppColors) {
+      this.toggleClass(`kr-${this.color}`, true);
+    }
+  }
+
+  private toggleClass(className: string, toggle: boolean): void {
+    this.renderer.setElementClass(this.element.nativeElement, className, toggle);
   }
 }

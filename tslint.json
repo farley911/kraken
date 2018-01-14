@@ -128,7 +128,7 @@
       "check-preblock"
     ],
 
-    "directive-selector": [true, "attribute", "kr", "kebab-case"],
+    "directive-selector": [true, "attribute", "kr", "camelCase"],
     "component-selector": [true, "element", "kr", "kebab-case"],
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,

@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 import { RoundedButtonDirective } from '../rounded-button/rounded-button.directive';
 
 @Directive({
-  selector: '[kr-rounded-outline-button]',
+  selector: '[krRoundedOutlineButton]',
   providers: [ MatRipple ]
 })
 export class RoundedOutlineButtonDirective extends RoundedButtonDirective implements AfterViewInit {
