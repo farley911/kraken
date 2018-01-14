@@ -1,5 +1,6 @@
 @import '~@angular/material/theming';
 @import '../themes/deeporange-teal-amber.color-theme.scss';
+@import 'vars.scss';
 
 $accent: map-get($deeporange-teal-amber-theme, accent);
 $primary: map-get($deeporange-teal-amber-theme, primary);
@@ -71,6 +72,23 @@ a.kr-btn {
   font-size: 10px !important; // Overrides Angular Material
   line-height: 22px !important; // Overrides Angular Material
   min-width: 50px !important; // Overrides Angular Material
+}
+
+.kr-icon-btn {
+  align-items: center;
+  border-radius: $icon-button-size;
+  display: inline-flex;
+  flex-direction: column;
+  height: $icon-button-size;
+  justify-content: center;
+  min-width: $icon-button-size;
+  width: $icon-button-size;
+
+  .mat-icon {
+    font-size: 35px;
+    height: 35px;
+    width: 35px;
+  }
 }
 
 .kr-outline-btn {

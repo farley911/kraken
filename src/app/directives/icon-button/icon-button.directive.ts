@@ -1,14 +1,14 @@
-import { Directive, Renderer, ElementRef, AfterViewInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Directive, ElementRef, Renderer, AfterViewInit } from '@angular/core';
 import { MatRipple } from '@angular/material/core';
+import { Router } from '@angular/router';
 
 import { ButtonDirective } from '../button/button.directive';
 
 @Directive({
-  selector: '[krRoundedButton]',
+  selector: '[krIconButton]',
   providers: [ MatRipple ]
 })
-export class RoundedButtonDirective extends ButtonDirective implements AfterViewInit {
+export class IconButtonDirective extends ButtonDirective implements AfterViewInit {
 
   constructor(
     public element: ElementRef,
@@ -20,7 +20,7 @@ export class RoundedButtonDirective extends ButtonDirective implements AfterView
   }
 
   public addClasses(): void {
-    this.renderer.setElementClass(this.element.nativeElement, 'kr-rounded-btn', true);
+    this.renderer.setElementClass(this.element.nativeElement, 'kr-icon-btn', true);
     super.addClasses();
   }
 
