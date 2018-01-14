@@ -144,25 +144,30 @@ a.kr-btn, .kr-fab-btn.kr-outline-btn {
   }
 }
 
-.kr-button-group * {
+.kr-button-group>* {
+  align-items: center;
   border-radius: 0px;
   border-right: none;
+  display: flex;
+  justify-content: center;
+  min-width: $icon-font-size;
 }
 
-.kr-button-group.kr-vertical-group * {
+.kr-button-group.kr-vertical-group>* {
   border-bottom: none;
   border-right: 2px solid;
+  min-height: 34px;
 }
 
-.kr-button-group *:first-child {
+.kr-button-group>*:first-child {
   border-radius: 2px 0px 0px 2px;
 }
 
-.kr-button-group *:last-child {
+.kr-button-group>*:last-child {
   border-radius: 0px 2px 2px 0px;
   border-right: 2px solid;
 }
 
-.kr-button-group.kr-vertical-group *:last-child {
+.kr-button-group.kr-vertical-group>*:last-child {
   border-bottom: 2px solid;
 }
