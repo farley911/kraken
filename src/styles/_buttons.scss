@@ -133,3 +133,22 @@ a.kr-btn, .kr-fab-btn.kr-outline-btn {
 .kr-rounded-btn {
   border-radius: 30px;
 }
+
+.kr-button-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.kr-button-group * {
+  border-radius: 0px;
+  border-right: none;
+}
+
+.kr-button-group *:first-child {
+  border-radius: 2px 0px 0px 2px;
+}
+
+.kr-button-group *:last-child {
+  border-radius: 0px 2px 2px 0px;
+  border-right: 2px solid;
+}
