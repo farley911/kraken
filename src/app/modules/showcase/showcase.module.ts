@@ -10,6 +10,8 @@ import { OutlineButtonDirective } from '../../directives/outline-button/outline-
     CommonModule,
     SharedModule
   ],
-  declarations: [ButtonsComponent]
+  declarations: [
+    ButtonsComponent
+  ]
 })
 export class ShowcaseModule { }

@@ -1,2 +1,10 @@
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 @import 'styles/_buttons.scss';
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+@import 'themes/deeporange-teal-amber.color-theme.scss';
+
+.kr-theme {
+  @include angular-material-theme($deeporange-teal-amber-theme);
+}

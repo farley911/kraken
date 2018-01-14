@@ -1,5 +1,55 @@
+@import '~@angular/material/theming';
+@import '../themes/deeporange-teal-amber.color-theme.scss';
+
+$accent: map-get($deeporange-teal-amber-theme, accent);
+$primary: map-get($deeporange-teal-amber-theme, primary);
+$warn: map-get($deeporange-teal-amber-theme, warn);
+
+.kr-btn {
+  border-radius: 2px;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  line-height: 36px;
+  min-width: 88px;
+  outline: none;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background .4s cubic-bezier(.25,.8,.25,1), box-shadow 280ms cubic-bezier(.4,0,.2,1);
+  user-select: none;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
 .kr-outline-btn {
   background-color: transparent;
   border: 2px solid black;
   padding: 0px 16px;
+
+  &:disabled {
+    border-color: rgba(0,0,0,.42);
+  }
+
+  &:active {
+    box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+  }
+
+  &.kr-primary {
+    border-color: mat-color($primary);
+    color: mat-color($primary);
+  }
+
+  &.kr-accent {
+    border-color: mat-color($accent);
+    color: mat-color($accent);
+  }
+
+  &.kr-warn {
+    border-color: mat-color($warn);
+    color: mat-color($warn);
+  }
 }

@@ -3,15 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { MaterialsModule } from '../../materials.module';
 import { OutlineButtonDirective } from '../../directives/outline-button/outline-button.directive';
+import { RouteModule } from '../../route.module';
 
 @NgModule({
   exports: [
     MaterialsModule,
-    OutlineButtonDirective
+    OutlineButtonDirective,
+    RouteModule
   ],
   imports: [
     CommonModule,
-    MaterialsModule
+    MaterialsModule,
+    RouteModule,
   ],
   declarations: [
     OutlineButtonDirective
