@@ -16,12 +16,13 @@ $warn: map-get($deeporange-teal-amber-theme, warn);
   line-height: 36px;
   min-width: 88px;
   outline: none;
+  overflow: hidden;
   position: relative;
   text-align: center;
   text-decoration: none;
   transition: background .4s cubic-bezier(.25,.8,.25,1), box-shadow 280ms cubic-bezier(.4,0,.2,1);
   user-select: none;
-  vertical-align: baseline;
+  vertical-align: bottom;
   white-space: nowrap;
 }
 

@@ -21,8 +21,6 @@ export class OutlineButtonDirective implements AfterViewInit {
 
   ngAfterViewInit() {
     this.addClasses();
-    this.renderer.setElementAttribute(this.element.nativeElement, 'mat-ripple', '');
-    this.renderer.setElementAttribute(this.element.nativeElement, 'mat-ripple-color', '#FF0000');
   }
 
   @HostListener('click') onClick() {
@@ -33,6 +31,7 @@ export class OutlineButtonDirective implements AfterViewInit {
 
   @HostListener('mousedown', [ '$event' ]) onmousedown(event) {
     this.renderer.setElementClass(this.element.nativeElement, 'kr-btn-mouse-focused', true);
+    this.ripple.launch(event.x, event.y);
   }
 
   private addClasses(): void {
