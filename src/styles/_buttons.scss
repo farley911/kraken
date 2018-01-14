@@ -52,7 +52,7 @@ button:disabled {
   }
 }
 
-a.kr-btn {
+a.kr-btn, .kr-fab-btn.kr-outline-btn {
   vertical-align: bottom;
 }
 
@@ -74,7 +74,7 @@ a.kr-btn {
   min-width: 50px !important; // Overrides Angular Material
 }
 
-.kr-icon-btn {
+.kr-fab-btn {
   align-items: center;
   border-radius: $icon-button-size;
   display: inline-flex;

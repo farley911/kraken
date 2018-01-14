@@ -7,16 +7,14 @@ import { RouteModule } from '../../route.module';
 import { RoundedButtonDirective } from '../../directives/rounded-button/rounded-button.directive';
 import { RoundedOutlineButtonDirective } from '../../directives/rounded-outline-button/rounded-outline-button.directive';
 import { ButtonSizeDirective } from '../../directives/button-size/button-size.directive';
-import { OutlineIconButtonDirective } from '../../directives/outline-icon-button/outline-icon-button.directive';
-import { IconButtonDirective } from '../../directives/icon-button/icon-button.directive';
+import { OutlineFabButtonDirective } from '../../directives/outline-fab-button/outline-fab-button.directive';
 
 @NgModule({
   exports: [
     ButtonSizeDirective,
-    IconButtonDirective,
     MaterialsModule,
     OutlineButtonDirective,
-    OutlineIconButtonDirective,
+    OutlineFabButtonDirective,
     RoundedButtonDirective,
     RoundedOutlineButtonDirective,
     RouteModule
@@ -28,9 +26,8 @@ import { IconButtonDirective } from '../../directives/icon-button/icon-button.di
   ],
   declarations: [
     ButtonSizeDirective,
-    IconButtonDirective,
     OutlineButtonDirective,
-    OutlineIconButtonDirective,
+    OutlineFabButtonDirective,
     RoundedButtonDirective,
     RoundedOutlineButtonDirective
   ]

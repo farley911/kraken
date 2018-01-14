@@ -3,13 +3,13 @@ import { Router } from '@angular/router';
 import { MatRipple } from '@angular/material/core';
 
 import { AppColors } from '../../enums/app-colors.enum';
-import { IconButtonDirective } from '../icon-button/icon-button.directive';
+import { ButtonDirective } from '../button/button.directive';
 
 @Directive({
-  selector: '[krOutlineIconButton]',
+  selector: '[krOutlineFabButton]',
   providers: [ MatRipple ]
 })
-export class OutlineIconButtonDirective extends IconButtonDirective implements AfterViewInit {
+export class OutlineFabButtonDirective extends ButtonDirective implements AfterViewInit {
 
   constructor(
     public element: ElementRef,
@@ -21,6 +21,7 @@ export class OutlineIconButtonDirective extends IconButtonDirective implements A
   }
 
   public addClasses(): void {
+    this.renderer.setElementClass(this.element.nativeElement, 'kr-fab-btn', true);
     this.renderer.setElementClass(this.element.nativeElement, 'kr-outline-btn', true);
     super.addClasses();
   }
