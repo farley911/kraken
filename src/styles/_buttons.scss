@@ -5,6 +5,10 @@ $accent: map-get($deeporange-teal-amber-theme, accent);
 $primary: map-get($deeporange-teal-amber-theme, primary);
 $warn: map-get($deeporange-teal-amber-theme, warn);
 
+button:disabled {
+  cursor: not-allowed !important; // Overrides material
+}
+
 .kr-btn {
   background-color: white;
   border: none;
@@ -26,6 +30,10 @@ $warn: map-get($deeporange-teal-amber-theme, warn);
   user-select: none;
   vertical-align: bottom;
   white-space: nowrap;
+
+  &:disabled {
+    background-color: rgba(0,0,0,.12);
+  }
 
   &.kr-primary {
     background-color: mat-color($primary);
