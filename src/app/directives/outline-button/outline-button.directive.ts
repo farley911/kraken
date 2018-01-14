@@ -5,7 +5,7 @@ import { MatRipple } from '@angular/material/core';
 import { ButtonDirective } from '../button/button.directive';
 
 @Directive({
-  selector: '[app-outline-button]',
+  selector: '[kr-outline-button]',
   providers: [ MatRipple ]
 })
 export class OutlineButtonDirective extends ButtonDirective implements AfterViewInit {

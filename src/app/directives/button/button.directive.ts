@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 import { AppColors } from '../../enums/app-colors.enum';
 
 @Directive({
-  selector: '[app-button]'
+  selector: '[kr-button]'
 })
 export class ButtonDirective {
   @Input() color: string;

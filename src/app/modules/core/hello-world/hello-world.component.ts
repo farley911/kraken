@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-hello-world',
+  selector: 'kr-hello-world',
   templateUrl: './hello-world.component.html',
   styleUrls: ['./hello-world.component.scss']
 })

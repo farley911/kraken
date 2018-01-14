@@ -5,12 +5,14 @@ import { MaterialsModule } from '../../materials.module';
 import { OutlineButtonDirective } from '../../directives/outline-button/outline-button.directive';
 import { RouteModule } from '../../route.module';
 import { RoundedButtonDirective } from '../../directives/rounded-button/rounded-button.directive';
+import { RoundedOutlineButtonDirective } from '../../directives/rounded-outline-button/rounded-outline-button.directive';
 
 @NgModule({
   exports: [
     MaterialsModule,
     OutlineButtonDirective,
     RoundedButtonDirective,
+    RoundedOutlineButtonDirective,
     RouteModule
   ],
   imports: [
@@ -20,7 +22,8 @@ import { RoundedButtonDirective } from '../../directives/rounded-button/rounded-
   ],
   declarations: [
     OutlineButtonDirective,
-    RoundedButtonDirective
+    RoundedButtonDirective,
+    RoundedOutlineButtonDirective
   ]
 })
 export class SharedModule { }

@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/mergeMap';
 
 @Component({
-  selector: 'app-root',
+  selector: 'kr-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
