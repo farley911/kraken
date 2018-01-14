@@ -12,7 +12,18 @@ export class ButtonGroupDirective implements AfterViewInit {
   ) { }
 
   ngAfterViewInit() {
+    this.addClasses();
+  }
+
+  private addClasses(): void {
     this.renderer.setElementClass(this.element.nativeElement, 'kr-button-group', true);
+    this.addVerticalClass();
+  }
+
+  private addVerticalClass(): void {
+    if (this.element.nativeElement.hasAttribute('vertical')) {
+      this.renderer.setElementClass(this.element.nativeElement, 'kr-vertical-group', true);
+    }
   }
 
 }
