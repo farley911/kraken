@@ -1,10 +1,10 @@
 @import '~@angular/material/theming';
-@import '../themes/deeporange-teal-amber.color-theme.scss';
+@import '../themes/deeporange-teal.color-theme.scss';
 @import 'vars.scss';
 
-$accent: map-get($deeporange-teal-amber-theme, accent);
-$primary: map-get($deeporange-teal-amber-theme, primary);
-$warn: map-get($deeporange-teal-amber-theme, warn);
+$accent: map-get($deeporange-teal-theme, accent);
+$primary: map-get($deeporange-teal-theme, primary);
+$warn: map-get($deeporange-teal-theme, warn);
 
 button:disabled {
   cursor: not-allowed !important; // Overrides material
@@ -38,17 +38,17 @@ button:disabled {
 
   &.kr-primary {
     background-color: mat-color($primary);
-    color: mat-contrast($deeporange-teal-amber-theme-primary, 500);
+    color: mat-contrast($deeporange-teal-theme-primary, 500);
   }
 
   &.kr-accent {
     background-color: mat-color($accent);
-    color: mat-contrast($deeporange-teal-amber-theme-accent, 500);
+    color: mat-contrast($deeporange-teal-theme-accent, 500);
   }
 
   &.kr-warn {
     background-color: mat-color($warn);
-    color: mat-contrast($deeporange-teal-amber-theme-warn, 500);
+    color: mat-contrast($deeporange-teal-theme-warn, 500);
   }
 }
 

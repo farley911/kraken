@@ -1,0 +1,5 @@
+$deeporange-teal-theme-primary: mat-palette($mat-deep-orange, 500, 100, 700);
+$deeporange-teal-theme-accent: mat-palette($mat-teal);
+$deeporange-teal-theme-warn: mat-palette($mat-amber);
+
+$deeporange-teal-theme: mat-light-theme($deeporange-teal-theme-primary, $deeporange-teal-theme-accent, $deeporange-teal-theme-warn);
