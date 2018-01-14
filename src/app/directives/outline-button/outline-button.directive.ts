@@ -1,44 +1,30 @@
-import { Directive, Renderer, Input, ElementRef, AfterViewInit, HostListener } from '@angular/core';
+import { Directive, Renderer, ElementRef, AfterViewInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { MatRipple } from '@angular/material/core';
 
-import { AppColors } from '../../enums/app-colors.enum';
+import { ButtonDirective } from '../button/button.directive';
+import { MatRipple } from '@angular/material/core';
 
 @Directive({
   selector: '[app-outline-button]',
   providers: [ MatRipple ]
 })
-export class OutlineButtonDirective implements AfterViewInit {
-  @Input() color: string;
-  @Input() routerLink: string;
+export class OutlineButtonDirective extends ButtonDirective implements AfterViewInit {
 
   constructor(
-    private element: ElementRef,
-    private renderer: Renderer,
-    private ripple: MatRipple,
-    private router: Router
-  ) { }
+    public element: ElementRef,
+    public renderer: Renderer,
+    public ripple: MatRipple,
+    public router: Router
+  ) {
+    super(element, renderer, ripple, router);
+  }
+
+  public addClasses(): void {
+    this.renderer.setElementClass(this.element.nativeElement, 'kr-outline-btn', true);
+    super.addClasses();
+  }
 
   ngAfterViewInit() {
     this.addClasses();
-  }
-
-  @HostListener('click') onClick() {
-    if (this.routerLink) {
-      this.router.navigate([ this.routerLink ]);
-    }
-  }
-
-  @HostListener('mousedown', [ '$event' ]) onmousedown(event) {
-    this.renderer.setElementClass(this.element.nativeElement, 'kr-btn-mouse-focused', true);
-    this.ripple.launch(event.x, event.y);
-  }
-
-  private addClasses(): void {
-    if (this.color in AppColors) {
-      this.renderer.setElementClass(this.element.nativeElement, `kr-${this.color}`, true);
-    }
-    this.renderer.setElementClass(this.element.nativeElement, 'kr-btn', true);
-    this.renderer.setElementClass(this.element.nativeElement, 'kr-outline-btn', true);
   }
 }
