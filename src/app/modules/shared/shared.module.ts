@@ -10,11 +10,14 @@ import { ButtonSizeDirective } from '../../directives/button-size/button-size.di
 import { OutlineFabButtonDirective } from '../../directives/outline-fab-button/outline-fab-button.directive';
 import { ButtonGroupDirective } from '../../directives/button-group/button-group.directive';
 import { ButtonDropdownComponent } from './button-dropdown/button-dropdown.component';
+import { DropdownItemDirective } from '../../directives/dropdown-item/dropdown-item.directive';
 
 @NgModule({
   exports: [
+    ButtonDropdownComponent,
     ButtonGroupDirective,
     ButtonSizeDirective,
+    DropdownItemDirective,
     MaterialsModule,
     OutlineButtonDirective,
     OutlineFabButtonDirective,
@@ -28,13 +31,14 @@ import { ButtonDropdownComponent } from './button-dropdown/button-dropdown.compo
     RouteModule,
   ],
   declarations: [
+    ButtonDropdownComponent,
     ButtonGroupDirective,
     ButtonSizeDirective,
+    DropdownItemDirective,
     OutlineButtonDirective,
     OutlineFabButtonDirective,
     RoundedButtonDirective,
     RoundedOutlineButtonDirective,
-    ButtonDropdownComponent,
   ]
 })
 export class SharedModule { }
