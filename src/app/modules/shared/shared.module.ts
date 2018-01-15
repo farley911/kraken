@@ -11,6 +11,7 @@ import { OutlineFabButtonDirective } from '../../directives/outline-fab-button/o
 import { ButtonGroupDirective } from '../../directives/button-group/button-group.directive';
 import { ButtonDropdownComponent } from './button-dropdown/button-dropdown.component';
 import { DropdownItemDirective } from '../../directives/dropdown-item/dropdown-item.directive';
+import { OutlineButtonDropdownComponent } from './outline-button-dropdown/outline-button-dropdown.component';
 
 @NgModule({
   exports: [
@@ -20,6 +21,7 @@ import { DropdownItemDirective } from '../../directives/dropdown-item/dropdown-i
     DropdownItemDirective,
     MaterialsModule,
     OutlineButtonDirective,
+    OutlineButtonDropdownComponent,
     OutlineFabButtonDirective,
     RoundedButtonDirective,
     RoundedOutlineButtonDirective,
@@ -36,6 +38,7 @@ import { DropdownItemDirective } from '../../directives/dropdown-item/dropdown-i
     ButtonSizeDirective,
     DropdownItemDirective,
     OutlineButtonDirective,
+    OutlineButtonDropdownComponent,
     OutlineFabButtonDirective,
     RoundedButtonDirective,
     RoundedOutlineButtonDirective,

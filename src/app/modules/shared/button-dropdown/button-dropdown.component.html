@@ -1,11 +1,11 @@
 <div class="kr-button-dropdown">
   <div>
-    <button krOutlineButton [color]="color" class="kr-dropdown-label" [ngClass]="{ split: isSplit }" (mousedown)="isExpanded = !isExpanded">
+    <button mat-raised-button [color]="color" class="kr-dropdown-label" [ngClass]="{ split: isSplit }" (mousedown)="isExpanded = !isExpanded">
       {{label}}
       <mat-icon>arrow_drop_down</mat-icon>
     </button>
   </div>
-  <div class="kr-button-dropdown-list" [@expand]="isExpanded">
+  <div class="kr-button-dropdown-list" [@toggleDropdown]="isExpanded">
     <ng-content></ng-content>
   </div>
 </div>
