@@ -14,7 +14,7 @@ button:disabled {
   display: inline-block;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
   font-size: 14px;
-  line-height: 36px;
+  line-height: $button-height;
   min-width: 88px;
   outline: none;
   overflow: hidden;

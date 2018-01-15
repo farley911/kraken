@@ -4,12 +4,12 @@ import { ButtonDropdownComponent } from '../button-dropdown/button-dropdown.comp
 import { FlyoutAnimations } from '../../../animations/flyout-button.animations';
 
 @Component({
-  selector: 'kr-outline-button-dropdown',
-  templateUrl: './outline-button-dropdown.component.html',
-  styleUrls: ['./outline-button-dropdown.component.scss'],
+  selector: 'kr-button-flyup',
+  templateUrl: './button-flyup.component.html',
+  styleUrls: ['./button-flyup.component.scss'],
   animations: FlyoutAnimations.toggleFlyout
 })
-export class OutlineButtonDropdownComponent extends ButtonDropdownComponent implements OnInit {
+export class ButtonFlyupComponent extends ButtonDropdownComponent implements OnInit {
 
   constructor(
     public element: ElementRef

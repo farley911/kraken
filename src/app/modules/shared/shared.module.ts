@@ -12,10 +12,12 @@ import { ButtonGroupDirective } from '../../directives/button-group/button-group
 import { ButtonDropdownComponent } from './button-dropdown/button-dropdown.component';
 import { DropdownItemDirective } from '../../directives/dropdown-item/dropdown-item.directive';
 import { OutlineButtonDropdownComponent } from './outline-button-dropdown/outline-button-dropdown.component';
+import { ButtonFlyupComponent } from './button-flyup/button-flyup.component';
 
 @NgModule({
   exports: [
     ButtonDropdownComponent,
+    ButtonFlyupComponent,
     ButtonGroupDirective,
     ButtonSizeDirective,
     DropdownItemDirective,
@@ -34,6 +36,7 @@ import { OutlineButtonDropdownComponent } from './outline-button-dropdown/outlin
   ],
   declarations: [
     ButtonDropdownComponent,
+    ButtonFlyupComponent,
     ButtonGroupDirective,
     ButtonSizeDirective,
     DropdownItemDirective,

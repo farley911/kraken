@@ -1,11 +1,12 @@
 <div class="kr-button-flyout">
+  <div class="kr-button-flyout-list kr-flyup" [@toggleFlyout]="isExpanded">
+    <ng-content></ng-content>
+  </div>
   <div>
     <button mat-raised-button [color]="color" class="kr-flyout-label" [ngClass]="{ split: isSplit }" (mousedown)="isExpanded = !isExpanded">
       {{label}}
       <mat-icon>arrow_drop_down</mat-icon>
     </button>
   </div>
-  <div class="kr-button-flyout-list" [@toggleFlyout]="isExpanded">
-    <ng-content></ng-content>
-  </div>
 </div>
+  

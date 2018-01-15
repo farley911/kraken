@@ -1,13 +1,13 @@
 import { Component, OnInit, Input, ViewEncapsulation, ElementRef } from '@angular/core';
 import { AppColors } from '../../../enums/app-colors.enum';
-import { DropdownAnimations } from '../../../animations/dropdown-button.animations';
+import { FlyoutAnimations } from '../../../animations/flyout-button.animations';
 
 @Component({
   selector: 'kr-button-dropdown',
   templateUrl: './button-dropdown.component.html',
   styleUrls: ['./button-dropdown.component.scss'],
   encapsulation: ViewEncapsulation.None,
-  animations: DropdownAnimations.toggleDropdown
+  animations: FlyoutAnimations.toggleFlyout
 })
 export class ButtonDropdownComponent implements OnInit {
   @Input() color: AppColors;

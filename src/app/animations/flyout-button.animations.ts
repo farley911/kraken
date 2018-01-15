@@ -1,8 +1,8 @@
 import { transition, style, state, trigger, animate, ElementRef } from '@angular/core';
 
-export const DropdownAnimations = {
-  toggleDropdown: [
-    trigger('toggleDropdown', [
+export const FlyoutAnimations = {
+  toggleFlyout: [
+    trigger('toggleFlyout', [
       state('0', style({
         display: 'none',
         height: '0px'

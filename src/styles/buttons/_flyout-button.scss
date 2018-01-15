@@ -1,10 +1,11 @@
 @import '../_vars.scss';
 
-.kr-button-dropdown {
+.kr-button-flyout {
   display: inline-block;
+  position: relative;
 }
 
-.kr-dropdown-label {
+.kr-flyout-label {
   align-items: center;
   box-sizing: border-box;
   display: flex;
@@ -12,21 +13,21 @@
   padding-right: 5px;
 }
 
-.kr-dropdown-label.split {
+.kr-flyout-label.split {
   padding-right: 0px;
 }
 
-.kr-dropdown-label .mat-icon {
+.kr-flyout-label .mat-icon {
   margin-left: 10px;
 }
 
-.kr-dropdown-label.split .mat-icon {
+.kr-flyout-label.split .mat-icon {
   border-left: 1px solid;
-  height: 36px;
-  line-height: 36px;
+  height: $button-height;
+  line-height: $button-height;
 }
 
-.kr-button-dropdown-list {
+.kr-button-flyout-list {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, .54);
   border-radius: 3px;
@@ -40,27 +41,32 @@
   z-index: 1000;
 }
 
-.kr-button-dropdown-list>* {
+.kr-button-flyout-list>* {
   background-color: white;
   border: none;
   cursor: pointer;
-  line-height: 36px;
+  line-height: $button-height;
   min-width: 125px;
   outline: none;
   padding: 0px 16px;
 }
 
-.kr-button-dropdown-list>*:hover {
+.kr-button-flyout-list>*:hover {
   background-color: rgba(0, 0, 0, .12);
 }
 
-.kr-button-dropdown-list>*:active {
+.kr-button-flyout-list>*:active {
   background-color: rgba(0, 0, 0, .24);
 }
 
-.kr-button-dropdown hr {
+.kr-button-flyout hr {
   border-style: inset;
   border-width: 1px;
   box-sizing: border-box;
   margin: 0px;
+}
+
+.kr-flyup {
+  bottom: calc(#{$button-height} + 3px);
+  flex-direction: column-reverse;
 }
