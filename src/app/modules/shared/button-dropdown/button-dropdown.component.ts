@@ -16,8 +16,8 @@ import { AppColors } from '../../../enums/app-colors.enum';
         display: 'inline-flex',
         height: '*'
       })),
-      transition('* => *', animate('300ms ease-in-out')),
-      transition('void => *', animate(0))
+      transition('void => *', animate(0)),
+      transition('* => *', animate('300ms ease-in-out'))
     ])
   ]
 })
