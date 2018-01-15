@@ -20,7 +20,7 @@ export class RoundedButtonDirective extends ButtonDirective implements AfterView
   }
 
   public addClasses(): void {
-    this.renderer.setElementClass(this.element.nativeElement, 'kr-rounded-btn', true);
+    this.renderer.setElementClass(this.element.nativeElement, 'kr-rounded-button', true);
     super.addClasses();
   }
 

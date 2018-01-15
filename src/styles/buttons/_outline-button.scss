@@ -1,4 +1,4 @@
-.kr-outline-btn {
+.kr-outline-button {
   border: 2px solid black;
   line-height: 32px;
   padding: 0px 16px;
@@ -7,15 +7,15 @@
     border-color: rgba(0,0,0,.42);
   }
 
-  &.kr-large-btn {
+  &.kr-large-button {
     line-height: 41px !important; // Overrides .kr-large-button
   }
 
-  &.kr-small-btn {
+  &.kr-small-button {
     line-height: 24px !important; // Overrides .kr-large-button
   }
 
-  &.kr-extra-small-btn {
+  &.kr-extra-small-button {
     line-height: 18px !important; // Overrides .kr-large-button
   }
 

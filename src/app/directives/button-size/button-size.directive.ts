@@ -15,7 +15,7 @@ export class ButtonSizeDirective implements AfterViewInit {
   ) { }
 
   ngAfterViewInit() {
-    this.renderer.setElementClass(this.element.nativeElement, `kr-${this.krButtonSize}-btn`, true);
+    this.renderer.setElementClass(this.element.nativeElement, `kr-${this.krButtonSize}-button`, true);
   }
 
 }

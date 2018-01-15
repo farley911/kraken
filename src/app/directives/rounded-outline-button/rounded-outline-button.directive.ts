@@ -20,7 +20,7 @@ export class RoundedOutlineButtonDirective extends RoundedButtonDirective implem
   }
 
   ngAfterViewInit() {
-    this.renderer.setElementClass(this.element.nativeElement, 'kr-outline-btn', true);
+    this.renderer.setElementClass(this.element.nativeElement, 'kr-outline-button', true);
     super.ngAfterViewInit();
   }
 

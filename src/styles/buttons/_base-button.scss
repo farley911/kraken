@@ -4,7 +4,7 @@ button:disabled {
   cursor: not-allowed !important; // Overrides material
 }
 
-.kr-btn {
+.kr-button {
   background-color: white;
   border: none;
   border-radius: 2px;
@@ -46,23 +46,23 @@ button:disabled {
   }
 }
 
-a.kr-btn {
+a.kr-button {
   vertical-align: bottom;
 }
 
-.kr-large-btn {
+.kr-large-button {
   font-size: 24px !important; // Overrides Angular Material
   line-height: 45px !important; // Overrides Angular Material
   min-width: 125px !important; // Overrides Angular Material
 }
 
-.kr-small-btn {
+.kr-small-button {
   font-size: 12px !important; // Overrides Angular Material
   line-height: 28px !important; // Overrides Angular Material
   min-width: 75px !important; // Overrides Angular Material
 }
 
-.kr-extra-small-btn {
+.kr-extra-small-button {
   font-size: 10px !important; // Overrides Angular Material
   line-height: 22px !important; // Overrides Angular Material
   min-width: 50px !important; // Overrides Angular Material

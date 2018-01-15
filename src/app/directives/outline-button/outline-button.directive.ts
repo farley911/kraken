@@ -20,7 +20,7 @@ export class OutlineButtonDirective extends ButtonDirective implements AfterView
   }
 
   public addClasses(): void {
-    this.renderer.setElementClass(this.element.nativeElement, 'kr-outline-btn', true);
+    this.renderer.setElementClass(this.element.nativeElement, 'kr-outline-button', true);
     super.addClasses();
   }
 

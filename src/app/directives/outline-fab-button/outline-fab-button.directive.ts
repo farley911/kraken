@@ -21,8 +21,8 @@ export class OutlineFabButtonDirective extends ButtonDirective implements AfterV
   }
 
   public addClasses(): void {
-    this.renderer.setElementClass(this.element.nativeElement, 'kr-fab-btn', true);
-    this.renderer.setElementClass(this.element.nativeElement, 'kr-outline-btn', true);
+    this.renderer.setElementClass(this.element.nativeElement, 'kr-fab-button', true);
+    this.renderer.setElementClass(this.element.nativeElement, 'kr-outline-button', true);
     super.addClasses();
   }
 

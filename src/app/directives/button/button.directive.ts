@@ -21,7 +21,7 @@ export class ButtonDirective {
 
   public addClasses(): void {
     this.addColorClass();
-    this.renderer.setElementClass(this.element.nativeElement, 'kr-btn', true);
+    this.renderer.setElementClass(this.element.nativeElement, 'kr-button', true);
   }
 
   @HostListener('click') onClick() {
@@ -31,12 +31,12 @@ export class ButtonDirective {
   }
 
   @HostListener('mousedown', [ '$event' ]) onmousedown(event) {
-    this.toggleClass('kr-btn-mouse-focused', true);
+    this.toggleClass('kr-button-mouse-focused', true);
     this.ripple.launch(event.x, event.y);
   }
 
   @HostListener('mouseup') onmouseup() {
-    this.toggleClass('kr-btn-mouse-focused', false);
+    this.toggleClass('kr-button-mouse-focused', false);
   }
 
   private addColorClass(): void {
