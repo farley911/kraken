@@ -1,10 +1,43 @@
+@import '../../../../styles/_vars.scss';
+
+.kr-button-dropdown {
+  display: inline-block;
+}
+
+.kr-dropdown-label {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding-right: 5px;
+}
+
+.kr-dropdown-label.split {
+  padding-right: 0px;
+}
+
+.kr-dropdown-label .mat-icon {
+  margin-left: 10px;
+}
+
+.kr-dropdown-label.split .mat-icon {
+  border-left: 1px solid;
+  height: 32px;
+  line-height: 32px;
+}
+
 .kr-button-dropdown-list {
+  background-color: white;
   border: 1px solid rgba(0, 0, 0, .54);
   border-radius: 3px;
   box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  box-sizing: border-box;
   display: inline-flex;
   flex-direction: column;
   margin-top: 2px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1000;
 }
 
 .kr-button-dropdown-list>* {
@@ -19,4 +52,8 @@
 
 .kr-button-dropdown-list>*:hover {
   background-color: rgba(0, 0, 0, .12);
+}
+
+.kr-button-dropdown-list>*:active {
+  background-color: rgba(0, 0, 0, .24);
 }
