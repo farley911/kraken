@@ -57,3 +57,10 @@
 .kr-button-dropdown-list>*:active {
   background-color: rgba(0, 0, 0, .24);
 }
+
+.kr-button-dropdown hr {
+  border-style: inset;
+  border-width: 1px;
+  box-sizing: border-box;
+  margin: 0px;
+}
