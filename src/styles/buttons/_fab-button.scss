@@ -1,0 +1,14 @@
+.kr-fab-btn {
+  align-items: center;
+  border-radius: $icon-button-size;
+  display: inline-flex;
+  flex-direction: column;
+  height: $icon-button-size;
+  justify-content: center;
+  min-width: $icon-button-size;
+  width: $icon-button-size;
+}
+
+.kr-fab-btn.kr-outline-btn {
+  vertical-align: bottom;
+}

@@ -1,0 +1,44 @@
+.kr-outline-btn {
+  border: 2px solid black;
+  line-height: 32px;
+  padding: 0px 16px;
+
+  &:disabled {
+    border-color: rgba(0,0,0,.42);
+  }
+
+  &.kr-large-btn {
+    line-height: 41px !important; // Overrides .kr-large-button
+  }
+
+  &.kr-small-btn {
+    line-height: 24px !important; // Overrides .kr-large-button
+  }
+
+  &.kr-extra-small-btn {
+    line-height: 18px !important; // Overrides .kr-large-button
+  }
+
+  &:active {
+    box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+  }
+
+  &.kr-primary, &.kr-accent, &.kr-warn {
+    background-color: white;
+  }
+
+  &.kr-primary {
+    border-color: mat-color($primary);
+    color: mat-color($primary);
+  }
+
+  &.kr-accent {
+    border-color: mat-color($accent);
+    color: mat-color($accent);
+  }
+
+  &.kr-warn {
+    border-color: mat-color($warn);
+    color: mat-color($warn);
+  }
+}
