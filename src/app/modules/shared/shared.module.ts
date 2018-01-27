@@ -13,6 +13,7 @@ import { ButtonDropdownComponent } from './button-dropdown/button-dropdown.compo
 import { DropdownItemDirective } from '../../directives/dropdown-item/dropdown-item.directive';
 import { OutlineButtonDropdownComponent } from './outline-button-dropdown/outline-button-dropdown.component';
 import { ButtonFlyupComponent } from './button-flyup/button-flyup.component';
+import { OutlineButtonFlyupComponent } from './outline-button-flyup/outline-button-flyup.component';
 
 @NgModule({
   exports: [
@@ -24,6 +25,7 @@ import { ButtonFlyupComponent } from './button-flyup/button-flyup.component';
     MaterialsModule,
     OutlineButtonDirective,
     OutlineButtonDropdownComponent,
+    OutlineButtonFlyupComponent,
     OutlineFabButtonDirective,
     RoundedButtonDirective,
     RoundedOutlineButtonDirective,
@@ -42,9 +44,10 @@ import { ButtonFlyupComponent } from './button-flyup/button-flyup.component';
     DropdownItemDirective,
     OutlineButtonDirective,
     OutlineButtonDropdownComponent,
+    OutlineButtonFlyupComponent,
     OutlineFabButtonDirective,
     RoundedButtonDirective,
-    RoundedOutlineButtonDirective,
+    RoundedOutlineButtonDirective
   ]
 })
 export class SharedModule { }

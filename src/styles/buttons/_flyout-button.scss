@@ -10,11 +10,7 @@
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  padding-right: 5px;
-}
-
-.kr-flyout-label.split {
-  padding-right: 0px;
+  padding-right: 5px !important; // Overrides mat-rasied-button
 }
 
 .kr-flyout-label .mat-icon {
@@ -25,6 +21,11 @@
   border-left: 1px solid;
   height: $button-height;
   line-height: $button-height;
+}
+
+.kr-flyout-label.kr-outline-button .mat-icon {
+  height: calc(#{$button-height} - 4px);
+  line-height: calc(#{$button-height} - 4px);
 }
 
 .kr-button-flyout-list {
@@ -66,7 +67,7 @@
   margin: 0px;
 }
 
-.kr-flyup {
+.kr-flyout {
   bottom: calc(#{$button-height} + 3px);
   flex-direction: column-reverse;
 }

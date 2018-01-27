@@ -3,7 +3,7 @@
     <ng-content></ng-content>
   </div>
   <div>
-    <button mat-raised-button [color]="color" class="kr-flyout-label" [ngClass]="{ split: isSplit }" (mousedown)="isExpanded = !isExpanded">
+    <button krOutlineButton [color]="color" class="kr-flyout-label" [ngClass]="{ split: isSplit }" (mousedown)="isExpanded = !isExpanded">
       {{label}}
       <mat-icon>arrow_drop_down</mat-icon>
     </button>
