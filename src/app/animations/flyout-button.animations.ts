@@ -5,11 +5,13 @@ export const FlyoutAnimations = {
     trigger('toggleFlyout', [
       state('0', style({
         display: 'none',
-        height: '0px'
+        height: '0px',
+        opacity: '0'
       })),
       state('1', style({
         display: 'inline-flex',
-        height: '*'
+        height: '*',
+        opacity: '1'
       })),
       transition('void => *', animate(0)),
       transition('* => *', animate('300ms ease-in-out'))

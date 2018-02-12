@@ -5,7 +5,10 @@
       <mat-icon>arrow_drop_down</mat-icon>
     </button>
   </div>
-  <div class="kr-button-flyout-list" [@toggleFlyout]="isExpanded">
-    <ng-content></ng-content>
+  <i class="material-icons caret" *ngIf="hasCaret">arrow_drop_down</i>
+  <div [@toggleFlyout]="isExpanded" class="kr-button-flyout-list" [ngClass]="{ 'has-caret': hasCaret }">
+    <div class="kr-button-flyout-content">
+      <ng-content></ng-content>
+    </div>
   </div>
 </div>

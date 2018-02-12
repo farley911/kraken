@@ -21,12 +21,20 @@ export class ButtonDropdownComponent implements OnInit {
   ngOnInit() {
   }
 
-  private get isSplit(): boolean {
-   return this.element.nativeElement.hasAttribute('split');
+  /**
+   * Returns a boolean indicating if the caret attribute is present
+   * @return {boolean}
+   */
+  private get hasCaret(): boolean {
+    return this.element.nativeElement.hasAttribute('caret');
   }
 
-  private get isOutlined(): boolean {
-    return this.element.nativeElement.hasAttribute('outline');
+  /**
+   * Returns a boolean indicating if the split attribute is present
+   * @return {boolean}
+   */
+  private get isSplit(): boolean {
+   return this.element.nativeElement.hasAttribute('split');
   }
 
 }

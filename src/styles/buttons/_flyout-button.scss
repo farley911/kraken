@@ -1,8 +1,30 @@
 @import '../_vars.scss';
+@import '../_colors.scss';
 
 .kr-button-flyout {
   display: inline-block;
   position: relative;
+}
+
+.kr-button-flyout .caret-mask {
+  bottom: -14px;
+  height: 14px;
+  overflow: hidden;
+  position: absolute;
+  width: 28px;
+  z-index: 1000;
+}
+
+.kr-button-flyout .caret {
+  background-color: white;
+  border: 1px solid $grey;
+  box-shadow: $box-shadow;
+  height: 14px;
+  left: 10px;
+  position: absolute;
+  top: -8px;
+  transform: rotate(45deg);
+  width: 14px;
 }
 
 .kr-flyout-label {
@@ -21,6 +43,7 @@
   border-left: 1px solid;
   height: $button-height;
   line-height: $button-height;
+  padding-left: 3px;
 }
 
 .kr-flyout-label.kr-outline-button .mat-icon {
@@ -30,19 +53,26 @@
 
 .kr-button-flyout-list {
   background-color: white;
-  border: 1px solid rgba(0, 0, 0, .54);
+  border: 1px solid $grey;
   border-radius: 3px;
-  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  box-shadow: $box-shadow;
   box-sizing: border-box;
   display: inline-flex;
   flex-direction: column;
   margin-top: 2px;
-  overflow: hidden;
   position: absolute;
   z-index: 1000;
 }
 
-.kr-button-flyout-list>* {
+.kr-button-flyout-list.has-caret {
+  bottom: calc(#{$button-height} + 17px);
+}
+
+.kr-button-flyout-content {
+  overflow: hidden;
+}
+
+.kr-button-flyout-content>* {
   background-color: white;
   border: none;
   cursor: pointer;
@@ -52,11 +82,11 @@
   padding: 0px 16px;
 }
 
-.kr-button-flyout-list>*:hover {
+.kr-button-flyout-content>*:hover {
   background-color: rgba(0, 0, 0, .12);
 }
 
-.kr-button-flyout-list>*:active {
+.kr-button-flyout-content>*:active {
   background-color: rgba(0, 0, 0, .24);
 }
 
@@ -67,7 +97,7 @@
   margin: 0px;
 }
 
-.kr-flyout {
+.kr-flyup {
   bottom: calc(#{$button-height} + 3px);
   flex-direction: column-reverse;
 }
