@@ -7,12 +7,17 @@
 }
 
 .kr-button-flyout .caret-mask {
-  bottom: -14px;
   height: 14px;
   overflow: hidden;
   position: absolute;
-  width: 28px;
+  top: -14px;
+  width: 29px;
   z-index: 1000;
+}
+
+.kr-flyup .caret-mask {
+  bottom: -14px;
+  top: auto;
 }
 
 .kr-button-flyout .caret {
@@ -22,7 +27,7 @@
   height: 14px;
   left: 10px;
   position: absolute;
-  top: -8px;
+  top: 6px;
   transform: rotate(45deg);
   width: 14px;
 }
@@ -61,11 +66,8 @@
   flex-direction: column;
   margin-top: 2px;
   position: absolute;
+  top: 48px;
   z-index: 1000;
-}
-
-.kr-button-flyout-list.has-caret {
-  bottom: calc(#{$button-height} + 17px);
 }
 
 .kr-button-flyout-content {
@@ -100,4 +102,13 @@
 .kr-flyup {
   bottom: calc(#{$button-height} + 3px);
   flex-direction: column-reverse;
+  top: auto;
+}
+
+.kr-flyup .caret {
+  top: -8px;
+}
+
+.kr-flyup.has-caret {
+  bottom: calc(#{$button-height} + 17px);
 }
