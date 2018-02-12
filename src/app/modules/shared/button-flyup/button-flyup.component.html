@@ -3,7 +3,7 @@
     <div class="kr-button-flyout-content">
       <ng-content></ng-content>
     </div>
-    <div class="caret-mask" *ngIf="hasCaret">
+    <div class="caret-mask" [ngClass]="{ center: alignedCenter, right: alignedRight }" *ngIf="hasCaret">
       <div class="caret"></div>
     </div>
   </div>

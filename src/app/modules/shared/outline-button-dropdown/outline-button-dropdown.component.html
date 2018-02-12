@@ -6,7 +6,7 @@
       </button>
     </div>
     <div [@toggleFlyout]="isExpanded" class="kr-button-flyout-list" [ngClass]="{ 'has-caret': hasCaret }">
-      <div class="caret-mask" *ngIf="hasCaret">
+      <div class="caret-mask" [ngClass]="{ center: alignedCenter, right: alignedRight }" *ngIf="hasCaret">
         <div class="caret"></div>
       </div>
       <div class="kr-button-flyout-content">

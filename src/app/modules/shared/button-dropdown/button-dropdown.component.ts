@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, ViewEncapsulation, ElementRef } from '@angular/core';
 import { AppColors } from '../../../enums/app-colors.enum';
 import { FlyoutAnimations } from '../../../animations/flyout-button.animations';
+import { Alignments } from '../../../enums/alignments.enum';
 
 @Component({
   selector: 'kr-button-dropdown',
@@ -10,6 +11,7 @@ import { FlyoutAnimations } from '../../../animations/flyout-button.animations';
   animations: FlyoutAnimations.toggleFlyout
 })
 export class ButtonDropdownComponent implements OnInit {
+  @Input() align: string = Alignments.Left;
   @Input() color: AppColors;
   private isExpanded = false;
   @Input() label: string;
@@ -18,14 +20,27 @@ export class ButtonDropdownComponent implements OnInit {
     public element: ElementRef
   ) { }
 
-  ngOnInit() {
+  /**
+   * Returns a boolean indicating if the caret is aligned center
+   * @return {boolean}
+   */
+  public get alignedCenter(): boolean {
+    return this.align === Alignments.Center;
+  }
+
+  /**
+   * Returns a boolean indicating if the caret is aligned right
+   * @return {boolean}
+   */
+  public get alignedRight(): boolean {
+    return this.align === Alignments.Right;
   }
 
   /**
    * Returns a boolean indicating if the caret attribute is present
    * @return {boolean}
    */
-  private get hasCaret(): boolean {
+  public get hasCaret(): boolean {
     return this.element.nativeElement.hasAttribute('caret');
   }
 
@@ -33,8 +48,11 @@ export class ButtonDropdownComponent implements OnInit {
    * Returns a boolean indicating if the split attribute is present
    * @return {boolean}
    */
-  private get isSplit(): boolean {
+  public get isSplit(): boolean {
    return this.element.nativeElement.hasAttribute('split');
+  }
+
+  ngOnInit() {
   }
 
 }

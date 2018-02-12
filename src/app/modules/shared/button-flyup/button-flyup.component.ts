@@ -1,5 +1,6 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef, Input } from '@angular/core';
 
+import { Alignments } from '../../../enums/alignments.enum';
 import { ButtonDropdownComponent } from '../button-dropdown/button-dropdown.component';
 import { FlyoutAnimations } from '../../../animations/flyout-button.animations';
 
@@ -10,6 +11,7 @@ import { FlyoutAnimations } from '../../../animations/flyout-button.animations';
   animations: FlyoutAnimations.toggleFlyout
 })
 export class ButtonFlyupComponent extends ButtonDropdownComponent implements OnInit {
+  @Input() align: string = Alignments.Left;
 
   constructor(
     public element: ElementRef

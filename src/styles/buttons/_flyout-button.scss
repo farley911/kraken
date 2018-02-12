@@ -15,6 +15,14 @@
   z-index: 1000;
 }
 
+.kr-button-flyout .caret-mask.center {
+  left: calc(50% - 15px);
+}
+
+.kr-button-flyout .caret-mask.right {
+  right: 10px;
+}
+
 .kr-flyup .caret-mask {
   bottom: -14px;
   top: auto;
@@ -66,8 +74,11 @@
   flex-direction: column;
   margin-top: 2px;
   position: absolute;
-  top: 48px;
   z-index: 1000;
+}
+
+.kr-button-flyout-list.has-caret {
+  top: 48px;
 }
 
 .kr-button-flyout-content {
@@ -102,7 +113,6 @@
 .kr-flyup {
   bottom: calc(#{$button-height} + 3px);
   flex-direction: column-reverse;
-  top: auto;
 }
 
 .kr-flyup .caret {
@@ -110,5 +120,6 @@
 }
 
 .kr-flyup.has-caret {
-  bottom: calc(#{$button-height} + 17px);
+  bottom: calc(#{$button-height} + 14px);
+  top: auto;
 }
