@@ -1,5 +1,5 @@
 <div class="kr-button-flyout">
-  <div [@toggleFlyout]="isExpanded" class="kr-button-flyout-list kr-flyup" [ngClass]="{ 'has-caret': hasCaret }">
+  <div [@toggleFlyout]="isExpanded" class="kr-button-flyout-list kr-flyup" [ngClass]="{ 'has-caret': hasCaret, center: alignedCenter, right: alignedRight }">
     <div class="kr-button-flyout-content">
       <ng-content></ng-content>
     </div>

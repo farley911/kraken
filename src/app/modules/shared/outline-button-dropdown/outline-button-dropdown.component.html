@@ -5,7 +5,7 @@
         <mat-icon>arrow_drop_down</mat-icon>
       </button>
     </div>
-    <div [@toggleFlyout]="isExpanded" class="kr-button-flyout-list" [ngClass]="{ 'has-caret': hasCaret }">
+    <div [@toggleFlyout]="isExpanded" class="kr-button-flyout-list" [ngClass]="{ 'has-caret': hasCaret, center: alignedCenter, right: alignedRight }">
       <div class="caret-mask" [ngClass]="{ center: alignedCenter, right: alignedRight }" *ngIf="hasCaret">
         <div class="caret"></div>
       </div>

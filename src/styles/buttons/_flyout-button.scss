@@ -74,11 +74,20 @@
   flex-direction: column;
   margin-top: 2px;
   position: absolute;
-  z-index: 1000;
+  z-index: 500;
 }
 
 .kr-button-flyout-list.has-caret {
   top: 48px;
+
+  &.center {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &.right {
+    right: 0px;
+  }
 }
 
 .kr-button-flyout-content {
@@ -89,10 +98,13 @@
   background-color: white;
   border: none;
   cursor: pointer;
+  display: block;
   line-height: $button-height;
   min-width: 125px;
   outline: none;
   padding: 0px 16px;
+  white-space: nowrap;
+  width: 100%;
 }
 
 .kr-button-flyout-content>*:hover {
