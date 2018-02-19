@@ -222,7 +222,7 @@
   </kr-outline-button-dropdown>
 </div>
 
-<h3>Raised Outline Button Flyup</h3>
+<h3>Outline Button Flyup</h3>
 <div>
   <kr-outline-button-flyup label="Dropdown">
     <button krDropdownItem>Item 1</button>
@@ -250,12 +250,12 @@
     <hr />
     <button krDropdownItem>Item 3</button>
   </kr-outline-button-dropdown>
-  <kr-outline-button-dropdown caret [align]="align.Center" label="Dropdown w/ Split" color="primary" split>
+  <kr-outline-button-dropdown caret label="Dropdown w/ Split" color="primary" split>
     <button krDropdownItem>Item 1</button>
     <button krDropdownItem>Item 2</button>
     <button krDropdownItem>Item 3</button>
   </kr-outline-button-dropdown>
-  <kr-outline-button-dropdown caret [align]="align.Right" label="Accent" color="accent">
+  <kr-outline-button-dropdown caret label="Accent" color="accent">
     <button krDropdownItem>Item 1</button>
     <button krDropdownItem>Item 2</button>
     <button krDropdownItem>Item 3</button>
@@ -270,16 +270,36 @@
     <hr />
     <button krDropdownItem>Item 3</button>
   </kr-outline-button-flyup>
-  <kr-outline-button-flyup caret [align]="align.Center" label="Dropdown w/ Split" color="primary" split>
+  <kr-outline-button-flyup caret label="Dropdown w/ Split" color="primary" split>
     <button krDropdownItem>Item 1</button>
     <button krDropdownItem>Item 2</button>
     <button krDropdownItem>Item 3</button>
   </kr-outline-button-flyup>
-  <kr-outline-button-flyup caret [align]="align.Right" label="Accent" color="accent">
+  <kr-outline-button-flyup caret label="Accent" color="accent">
     <button krDropdownItem>Item 1</button>
     <button krDropdownItem>Item 2</button>
     <button krDropdownItem>Item 3</button>
   </kr-outline-button-flyup>
+</div>
+
+<h3>Button Flyup/Dropdown Alignment</h3>
+<div>
+  <kr-button-flyup caret label="Left Aligned">
+    <button krDropdownItem>Item 1</button>
+    <button krDropdownItem>Item 2</button>
+    <hr />
+    <button krDropdownItem>Item 3</button>
+  </kr-button-flyup>
+  <kr-button-flyup caret [align]="align.Center" label="Center Aligned" color="primary" split>
+    <button krDropdownItem>Item 1</button>
+    <button krDropdownItem>Item 2</button>
+    <button krDropdownItem>Item 3</button>
+  </kr-button-flyup>
+  <kr-button-flyup caret [align]="align.Right" label="Right Aligned" color="accent">
+    <button krDropdownItem>Item 1</button>
+    <button krDropdownItem>Item 2</button>
+    <button krDropdownItem>Item 3</button>
+  </kr-button-flyup>
 </div>
 
 <h2>Button Groups</h2>
